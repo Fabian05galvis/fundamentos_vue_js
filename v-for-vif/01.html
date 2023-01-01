@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+        <h1>{{ title }}</h1>
+
+        <ul>
+            <li v-for="fruta of frutas">{{fruta}}</li>
+        </ul>
+
+        <hr/>
+
+        <ul>
+            <li v-for="fruta of frutas_objets">
+                {{fruta.name}} - {{fruta.count}}
+                <span v-if="fruta.count <= 0">Sin stocks!!!</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="01.js"></script>
+</body>
+</html>
