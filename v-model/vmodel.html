@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+        <h1>{{ title }}</h1>
+
+        <input type="text" v-model="nueva_fruta">
+        <button @click="add_fruta">ADD</button>
+
+        <ul>
+            <li v-for="fruta of frutas">
+                {{fruta.name}} - {{fruta.count}}
+                <span v-if="fruta.count <= 0">Sin stocks!!!</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="vmodel.js"></script>
+</body>
+</html>
