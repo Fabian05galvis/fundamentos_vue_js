@@ -7,18 +7,18 @@
 })*/
 
 //instanciamo vue js 3.0
-const { createApp } = Vue
+const { createApp } = Vue;
 
-  createApp({
-    data() {
-      return {
-        title: 'Hello Vue!',
-        frutas : ["manzana","pera","platano"],
-        frutas_objets : [
-            {name:'Pera',count:10},
-            {name:'Manzana',count:0},
-            {name:'Banana',count:155},
-        ]
-      }
-    }
-  }).mount('#app')
+createApp({
+  data() {
+    return {
+      title: "Hello Vue!",
+      frutas: ["manzana", "pera", "platano"],
+      frutas_objets: [
+        { name: "Pera", count: 10 },
+        { name: "Manzana", count: 0 },
+        { name: "Banana", count: 155 },
+      ],
+    };
+  },
+}).mount("#app");
